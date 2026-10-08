@@ -1,0 +1,1025 @@
+{
+  "lanes": {
+    "rtm": {
+      "name": "NSM",
+      "color": "#FF6B1A",
+      "enabled": true
+    },
+    "fkbpros": {
+      "name": "SGD Pros",
+      "color": "#C24E0A"
+    },
+    "fkb": {
+      "name": "SGD",
+      "color": "#FFB27A",
+      "enabled": true,
+      "metaAdAccount": "act_100000000000009",
+      "campaigns": "all",
+      "leads": "auto",
+      "ghlSource": "fkb-fb-ad"
+    }
+  },
+  "clients": [
+    {
+      "code": "acme",
+      "name": "Adam / Acme Restoration",
+      "metaAdAccount": "act_100000000000001",
+      "hint": "Adam (Adam Ames) of Acme Restoration, LLC: garden and deck renovations in Maple County, New Jersey (Fenton Falls, Midvale, Fairhold, the Pine Shore).",
+      "folder": "Adam AcmeCo",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "acme-fb-ad"
+    },
+    {
+      "code": "bluebird",
+      "name": "Dee / Bluebird Carpentry",
+      "metaAdAccount": "act_100000000000002",
+      "hint": "Dee Bell of Bluebird Carpentry & Woodwork: garden and deck renovations in Eastport and Kingsport, New York City.",
+      "folder": "Dee",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "bluebird-fb-ad"
+    },
+    {
+      "code": "cedar",
+      "name": "Ben / Cedar Direct (Riverside)",
+      "metaAdAccount": "act_100000000000003",
+      "hint": "Ben of Cedar Direct in Riverside, Kingsport NY: garden cabinet refinishing plus quartz countertops for Centerville, Kingsport, Eastport and Shoreham County. Same Cedar Direct brand as Eli and Finn in Lakeside.",
+      "folder": "Ben",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "cedar-fb-ad"
+    },
+    {
+      "code": "delta",
+      "name": "Coral Renovation",
+      "metaAdAccount": "act_100000000000004",
+      "hint": "Coral Renovation of Mount Larkin, NJ: full garden and deck renovations in South Jersey (Camber, Burlton and Glouton counties).",
+      "folder": "Coral",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "delta-fb-ad"
+    },
+    {
+      "code": "everest",
+      "name": "Eli and Finn / Cedar Direct (Lakeside)",
+      "metaAdAccount": "act_100000000000005",
+      "hint": "Eli and Finn of Cedar Direct in Lakeside, NY: garden cabinet refinishing plus laminate countertops for the Lakeside and Bufford areas (upstate New York). Same Cedar Direct brand as Ben in Kingsport.",
+      "folder": "Eli and Finn",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "everest-fb-ad"
+    },
+    {
+      "code": "fairway",
+      "name": "Fay / Fairway Home Pros",
+      "metaAdAccount": "act_100000000000006",
+      "hint": "Fay of Fairway Home Pros: full deck and garden renovations in the New York City metro area.",
+      "folder": "Fay",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "fairway-fb-ad"
+    },
+    {
+      "code": "granite",
+      "name": "Granite Home Improvers",
+      "metaAdAccount": "act_100000000000007",
+      "hint": "Granite Home Improvers of Stonebridge, NJ (family owned since 1983): deck renovations only, the One Week Deck System wall panels or custom tile, North Jersey. Taglines: \"Stay Put... Upgrade!\", \"Most Decks Renovated In 1 Week or Less\".",
+      "folder": "Granite",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "granite-fb-ad"
+    },
+    {
+      "code": "harbor",
+      "name": "Hana / HHS Deck Systems",
+      "metaAdAccount": "act_100000000000008",
+      "hint": "Hana of The Harbor House (HHS Deck Systems, 7B Decks): deck safety packages, grab bars, tub-to-shower conversions and deck renovations in Centerville and the Northfield.",
+      "folder": "Hana",
+      "campaigns": "state_json",
+      "leads": "ghl",
+      "ghlSource": "harbor-fb-ad"
+    }
+  ],
+  "roots": [
+    {
+      "path": "/Volumes/Media Drive/SGDPros ads",
+      "lane": "fkbpros"
+    },
+    {
+      "path": "/Volumes/Media Drive/NorthstarMedia/Static Ads",
+      "lane": "rtm"
+    },
+    {
+      "path": "/Volumes/Media Drive/NorthstarMedia/Logos and Branding",
+      "lane": "rtm"
+    },
+    {
+      "path": "/Volumes/Media Drive/Northstar Media Youtube",
+      "lane": "rtm"
+    },
+    {
+      "path": "Summit Gardens and Decks Studio",
+      "lane": "fkb"
+    }
+  ],
+  "tagRules": [
+    {
+      "glob": "Bluebird Carpentry - Work Gallery/**",
+      "clients": [
+        "bluebird"
+      ]
+    },
+    {
+      "glob": "Coral Renovation - Work Gallery/**",
+      "clients": [
+        "delta"
+      ]
+    },
+    {
+      "glob": "Fay FWHP - Work Gallery/**",
+      "clients": [
+        "fairway"
+      ]
+    },
+    {
+      "glob": "Granite Home Improvers - Work Gallery/**",
+      "clients": [
+        "granite"
+      ]
+    },
+    {
+      "glob": "The Harbor House - Work Gallery/**",
+      "clients": [
+        "harbor"
+      ]
+    },
+    {
+      "glob": "Primary/SGC Ben/**",
+      "clients": [
+        "cedar"
+      ]
+    },
+    {
+      "glob": "Primary/SGC NJ/**",
+      "clients": [
+        "acme",
+        "delta",
+        "granite"
+      ]
+    },
+    {
+      "glob": "Primary/SGC NY/**",
+      "clients": [
+        "bluebird",
+        "cedar",
+        "everest",
+        "fairway",
+        "harbor"
+      ]
+    },
+    {
+      "glob": "renders/Adam (Acme Restoration NJ)/**",
+      "clients": [
+        "acme"
+      ]
+    },
+    {
+      "glob": "renders/Adam (Acme Restoration)/**",
+      "clients": [
+        "acme"
+      ]
+    },
+    {
+      "glob": "renders/Ben (Cedar Direct NYC)/**",
+      "clients": [
+        "cedar"
+      ]
+    },
+    {
+      "glob": "renders/Coral Renovation/**",
+      "clients": [
+        "delta"
+      ]
+    },
+    {
+      "glob": "renders/Dee Bell (Bluebird Carpentry)/**",
+      "clients": [
+        "bluebird"
+      ]
+    },
+    {
+      "glob": "renders/Eli and Finn (Cedar Direct)/**",
+      "clients": [
+        "everest"
+      ]
+    },
+    {
+      "glob": "renders/Fay (Fairway Home Pros)/**",
+      "clients": [
+        "fairway"
+      ]
+    },
+    {
+      "glob": "renders/Granite (Granite Home Improvers)/**",
+      "clients": [
+        "granite"
+      ]
+    },
+    {
+      "glob": "renders/Hana (The Harbor House)/**",
+      "clients": [
+        "harbor"
+      ]
+    },
+    {
+      "glob": "renders/Ad for NY Renovations/**",
+      "clients": [
+        "bluebird",
+        "cedar",
+        "everest",
+        "fairway",
+        "harbor"
+      ]
+    },
+    {
+      "glob": "Cedar Direct - Before After Gallery/**",
+      "clients": [
+        "cedar",
+        "everest"
+      ]
+    }
+  ],
+  "profile": {
+    "owner": {
+      "name": "Alex",
+      "display": "Alex N"
+    },
+    "lanes": {
+      "rtm": {
+        "fullName": "Northstar Media",
+        "about": "Reels, Shorts, YouTube, statics and brand kit",
+        "mark": "R."
+      },
+      "fkbpros": {
+        "fullName": "Summit Garden & Deck Pros",
+        "mark": "F"
+      },
+      "fkb": {
+        "fullName": "Summit Gardens and Decks",
+        "sub": "Gardens and Decks",
+        "about": "Garden and deck renovation, NJ / PA",
+        "mark": "K"
+      }
+    },
+    "describe": {
+      "image": "Describe this image for a searchable media library. Most files are garden and deck renovation photos, ads and videos; some are marketing thumbnails, logos or other graphics. Describe what is actually there.",
+      "video": "Describe this video for a searchable media library. Most files are garden and deck renovation videos and ads; some are marketing videos, intros or graphics. Describe what is actually there."
+    },
+    "classify": {
+      "categories": {
+        "job_photo": "A real photo of a garden, deck or job site (finished, in progress or before) with no ad headline or offer text on it.",
+        "intro_outro": "A clip from Riley's filmed Intro or Outro library (a presenter in a garden saying one opening or closing line; files in the Intro, Outro or Outtro folders), or the branded SGD Pros end card.",
+        "testimonial": "A customer or householder telling their experience with a installer, or a customer review shown as the main content.",
+        "vsl": "A sales video for one offer or one installer's landing page: a presenter walking through the offer, usually 1 to 10 minutes. Not a numbered YouTube episode.",
+        "thumbnail": "Alex's own YouTube thumbnail or episode slide: a bold horizontal graphic with a face and a few huge words, made to be clicked. Not one saved from another creator as inspiration."
+      },
+      "sections": {
+        "rtm": "NSM (Northstar Media, Alex's own YouTube and social)",
+        "fkbpros": "SGD Pros (ads for garden and deck installers)",
+        "fkb": "SGD (Summit Gardens and Decks: Alex's own garden and deck renovation company in New Jersey and Pennsylvania, its ads and project media)"
+      },
+      "correctionsKey": "owners_recent_corrections",
+      "correctionsLine": "`owners_recent_corrections` shows how Alex filed similar files.",
+      "clientTagsKey": "owners_recent_client_tags",
+      "client": {
+        "key": "installer",
+        "question": "Does this file name or clearly point to the installer in `installer`? Look at `file.name`, `file.folder`, the words on screen in `description` and `spoken_opening`.",
+        "yes": "Yes: the file name, folder, on-screen words or spoken words name this installer, their company, their code, their town or region, or an offer only they make.",
+        "no": "No: nothing names this installer. A generic garden or deck that any installer could have done is a no."
+      },
+      "universal": {
+        "question": "Is this generic SGD Pros material that is not about any one installer?",
+        "yes": "Yes: SGD Pros branded or generic renovation material that names no single installer, company, code, town or offer.",
+        "no": "No: it names or clearly belongs to one installer, company or town."
+      },
+      "sharedLabel": "shared: no single installer (generic SGD Pros)",
+      "sharedClientSets": [
+        [
+          "cedar",
+          "everest"
+        ]
+      ],
+      "brandSafe": {
+        "yes": "Yes: no logo or name of an outside company (other than SGD Pros, Northstar Media or the installer it is about), no private info (street addresses, house numbers, license plates, children's faces, personal paperwork) and no broken, glitched, blurry or unfinished frames or text."
+      },
+      "pp": {
+        "person": {
+          "yes": "Yes: a specific person is named so they recognize themselves, like new householders, people with an old tub, Eastport householders or busy families."
+        },
+        "pain": {
+          "yes": "Yes: a specific problem is stated, like dated cabinets, climbing over an old tub, weeks of construction or a installer who disappeared."
+        },
+        "promise": {
+          "yes": "Yes: a specific outcome is promised, like a new garden look without a full gut, a walk-in shower in about a week, or a vetted local pro."
+        }
+      }
+    },
+    "hooks": {
+      "sections": {
+        "rtm": "NSM (Northstar Media)",
+        "fkbpros": "SGD Pros",
+        "fkb": "SGD (Summit Gardens and Decks)"
+      },
+      "clientKey": "installer",
+      "sharedScope": "shared: SGD Pros in general, not one installer",
+      "pp": {
+        "person": {
+          "yes": "Yes: a specific person is named or described, like new householders, Maple County householders, people stepping over an old tub, or installers running Meta ads.",
+          "no": "No: nobody specific; only \"you\" or a broad word like \"householders\" or \"business owners\" with nothing that narrows it."
+        },
+        "pain": {
+          "yes": "Yes: a specific problem is stated, like dated cabinets, stepping over an old tub, a installer who disappeared, weeks of construction, or ad spend with no booked calls."
+        },
+        "promise": {
+          "yes": "Yes: a specific outcome is promised, like a new garden look without a full gut, a walk-in shower in about a week, a vetted local pro, or booked appointments from ad spend."
+        }
+      },
+      "legacyBriefs": {
+        "fkbpros": "SGD Pros (Summit Garden & Deck Pros) paid ads. SGD Pros connects householders with a vetted local garden and deck pro; the ads never speak as the installer or name them (connector voice). Voice: a straight talking neighbor, calm and reassuring, about the viewer's garden or deck, never about the company first; no hype, no shouting, no fake urgency; no dashes as punctuation.",
+        "rtm": "Northstar Media organic content (YouTube, Shorts, Reels, social) for small business owners, in Alex's own first person voice.",
+        "fkb": "Summit Gardens and Decks (SGD) paid ads: Alex's own garden and deck renovation company, speaking as itself (not a connector for other installers). Voice: plain, calm and confident, about the viewer's own garden or deck, never about the company first; no hype, no shouting, no fake urgency; no dashes as punctuation."
+      }
+    },
+    "rubric": {
+      "dimensions": [
+        {
+          "id": "specificity",
+          "label": "Specificity",
+          "short": "Specific",
+          "question": "How specific are the words in `hook.text`? Count concrete details a viewer could picture or check.",
+          "appliesTo": {
+            "kinds": [
+              "text",
+              "video"
+            ],
+            "sections": [
+              "rtm",
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "Generic: could run for any company (like \"Quality work you can trust\"); no number, place, person, problem or result named.",
+            "Mostly generic: names a room, a service or an audience, but nothing a viewer could picture or check.",
+            "One concrete detail (a place, a number, a named problem or a clear result); the rest is general.",
+            "Two or more concrete details, like a place and a number, or a named problem and a timeline.",
+            "Concrete all the way through: exact numbers or timelines, a named person or place and a result a viewer could picture or check."
+          ]
+        },
+        {
+          "id": "avatar_match",
+          "label": "Avatar match",
+          "short": "Avatar",
+          "question": "How clearly is `hook.text` written for ONE person in `avatars`? Check two things: does it say WHO they are, and does it name THEIR exact problem or situation?",
+          "appliesTo": {
+            "kinds": [
+              "text",
+              "video"
+            ],
+            "sections": [
+              "rtm",
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "Written for nobody in particular, or about the company itself (\"We are...\", \"Our team...\").",
+            "Written for everyone (\"householders\", \"business owners\"): no situation or problem that belongs to one person in `avatars`.",
+            "Fits the situation of one person in `avatars` in general words, but names neither who they are nor their exact problem.",
+            "Names the exact problem or situation of one person in `avatars` (their pain, in words they would use), but not who they are.",
+            "Names who they are AND their exact problem, in words they would use, for one person in `avatars` only."
+          ]
+        },
+        {
+          "id": "curiosity_gap",
+          "label": "Curiosity gap",
+          "short": "Curiosity",
+          "question": "How strongly does `hook.text` make the viewer want to see what comes next?",
+          "appliesTo": {
+            "kinds": [
+              "text",
+              "video"
+            ],
+            "sections": [
+              "rtm",
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "Nothing to find out: a plain statement, label or slogan that closes itself.",
+            "Mild: a topic is raised, but the answer is obvious or already given in the same line.",
+            "A clear question or tease, but a familiar one the viewer has seen many times.",
+            "An open loop: sets up a specific mistake, surprise, reveal or result and holds back the payoff.",
+            "A strong open loop: a specific, unexpected or slightly uncomfortable setup the viewer can only settle by watching or clicking."
+          ]
+        },
+        {
+          "id": "offer_clarity",
+          "label": "Offer clarity",
+          "short": "Offer",
+          "question": "How clearly does `hook.text` say what the viewer gets if they act, and what to do next?",
+          "appliesTo": {
+            "kinds": [
+              "text",
+              "video"
+            ],
+            "sections": [
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "No offer: nothing the viewer gets and nothing to do.",
+            "An offer is only implied (\"we can help\", \"find out how\"), with nothing concrete to get.",
+            "Names what they get in general words (a quote, a consultation, a renovation), with no detail about it.",
+            "A concrete offer with a detail that makes it easy to say yes: free, local, vetted, no pressure or a timeline.",
+            "A concrete offer plus the next step in plain words: exactly what they get, what it costs them (like free) and what to do now."
+          ]
+        },
+        {
+          "id": "visual_stop_power",
+          "label": "Visual stop power",
+          "short": "Visual",
+          "question": "How strongly would the first 3 seconds of this video stop someone scrolling? Judge `video.first_3_seconds` and `video.on_screen_text`.",
+          "appliesTo": {
+            "kinds": [
+              "video"
+            ],
+            "sections": [
+              "rtm",
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "Nothing stands out in the first 3 seconds: a logo, a dark or blank frame, or a slow establishing shot.",
+            "A plain shot of a room or a person with little movement and no on-screen text.",
+            "A clear subject (a person talking or a room) with some movement or on-screen text, but nothing unusual.",
+            "A striking opening: a big reveal, a strong before, bold on-screen text or a person speaking straight to the camera from the first frame.",
+            "An opening nobody could miss: a dramatic transformation or surprising image together with bold text in the first second."
+          ]
+        },
+        {
+          "id": "brand_fit",
+          "label": "Brand fit",
+          "short": "Brand",
+          "question": "Does `hook.text` follow this channel's voice and rules? Check it against `channel.brief` and every line of `channel.notes`.",
+          "appliesTo": {
+            "kinds": [
+              "text",
+              "video"
+            ],
+            "sections": [
+              "rtm",
+              "fkbpros",
+              "fkb"
+            ]
+          },
+          "levels": [
+            "Breaks a rule: names someone `channel.notes` says never to name, makes a claim `channel.notes` does not allow, or speaks as the wrong speaker.",
+            "Off voice: hype, shouting, fake urgency or corporate phrases (\"we pride ourselves\"), or it is about the company instead of the viewer.",
+            "Breaks no rule but has no voice: a bare label, slogan or list of services (like \"Garden, Deck, or Both\").",
+            "On voice: plain words about the viewer's own room, problem or goal, calm and confident, and every claim is one `channel.notes` allows.",
+            "On voice and tied to this channel: plain words about the viewer plus a detail from `channel.notes` (a place, a product or a proof point) used the way `channel.notes` allows."
+          ]
+        }
+      ],
+      "mechanics": [
+        {
+          "id": "be_specific",
+          "label": "Be specific",
+          "definition": "Exact details carry it: a precise person, number, place or real result instead of general words."
+        },
+        {
+          "id": "lead_number",
+          "label": "Lead with a number",
+          "definition": "Opens with a number that carries time, effort or cost, like \"in 1 week\", \"under $5\" or \"10 years\"."
+        },
+        {
+          "id": "call_out",
+          "label": "Call out the audience",
+          "definition": "Names who it is for so they pick themselves out, like \"New householders:\" or \"Installers,\"."
+        },
+        {
+          "id": "taboo",
+          "label": "Lean into the taboo",
+          "definition": "Says what competitors are too polite to say out loud."
+        },
+        {
+          "id": "primal_desire",
+          "label": "Primal desire",
+          "definition": "Sells a deep want (status, safety, belonging, approval, pride) instead of a product feature."
+        },
+        {
+          "id": "curiosity_loop",
+          "label": "Curiosity loop",
+          "definition": "Shows the setup and hides the payoff behind the click."
+        },
+        {
+          "id": "negative",
+          "label": "Negative",
+          "definition": "Phrased in the negative: names what the viewer fears, hates or wants to avoid."
+        },
+        {
+          "id": "golden_nugget",
+          "label": "Golden nugget testimonial",
+          "definition": "Borrows a real customer's own words."
+        },
+        {
+          "id": "transformation",
+          "label": "Show the transformation",
+          "definition": "Puts the before and the after in front of the viewer instead of describing the result."
+        },
+        {
+          "id": "none",
+          "label": "None",
+          "definition": "None of these: a plain statement, slogan or label."
+        }
+      ],
+      "avatars": [
+        {
+          "slug": "justmovedin_garden",
+          "label": "Just moved in",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "New householder staring at the last owner's garden",
+          "pain": "Inherited dated cabinets; a renovation feels huge on top of moving",
+          "promise": "Transform the garden without a full gut",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "datedcabinets_refinish",
+          "label": "Dated cabinets",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Longtime owner whose garden is stuck decades back",
+          "pain": "Embarrassed by the garden; assumes replacement is the only fix",
+          "promise": "Refinishing: the dream look at a fraction of the cost and disruption of a full renovation",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "oldtub_walkin",
+          "label": "Old tub stepper",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Older householder or mobility conscious family",
+          "pain": "Climbing over an old tub every day; worried about safety",
+          "promise": "A tub to shower conversion: an easy, safe, modern walk-in shower",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "oneweekdeck_panel",
+          "label": "One week deck",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Busy household that cannot lose a deck for a month",
+          "pain": "Dreads weeks of construction, dust and strangers in the house",
+          "promise": "A panel system deck renovation done in about a week (panel claims only, never tile)",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "spaseeker_customtile",
+          "label": "Spa seeker",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Householder who wants the beautiful custom deck",
+          "pain": "Their deck works but has no joy; they want the magazine look",
+          "promise": "A custom tile, spa grade renovation by a vetted local pro",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "countertop_refresh",
+          "label": "Countertop refresh",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Owner whose garden is fine except the countertops",
+          "pain": "Worn, dated counters drag the whole room down",
+          "promise": "New countertops, fast, matched to the existing garden",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "sellingsoon_refresh",
+          "label": "Selling soon",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Householder listing within about six months",
+          "pain": "The agent said the garden or deck will cost them on every offer, and they are not gutting a house they are leaving",
+          "promise": "The targeted refresh that shows up in listing photos, not a full renovation",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "abandoned_job_finish",
+          "label": "Abandoned job",
+          "section": "fkbpros",
+          "stage": "obj",
+          "universalOnly": false,
+          "person": "Householder whose installer took the deposit and stopped showing up",
+          "pain": "Living in a torn up room, out real money, and now afraid to hire anyone again",
+          "promise": "A vetted pro who finishes what someone else walked away from",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "waterdamage_forced",
+          "label": "Water damage",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Householder who found a leak, rot or mold and now has to renovation whether they planned to or not",
+          "pain": "No time to research, and a real fear the scope triples once the walls open",
+          "promise": "A vetted pro who scopes it straight and starts quickly",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "stalled_diy",
+          "label": "Stalled DIY",
+          "section": "fkbpros",
+          "stage": "ps",
+          "universalOnly": false,
+          "person": "Householder who started the job themselves and hit the point where it needs a pro",
+          "pain": "A half demolished room for months; embarrassed to call someone in now",
+          "promise": "A pro who picks it up from where it is, with no lecture",
+          "sections": [
+            "fkbpros",
+            "fkb"
+          ]
+        },
+        {
+          "slug": "vettedrating_responsive",
+          "label": "Vetted rating",
+          "section": "fkbpros",
+          "stage": "obj",
+          "universalOnly": true,
+          "person": "Householder who will only hire a installer rated 4.5 stars or higher on Google",
+          "pain": "The good ones are impossible to get hold of; calls and texts go unanswered",
+          "promise": "SGD Pros connects them with a pro rated 4.5 or higher on Google, and does the reaching out for them"
+        },
+        {
+          "slug": "busy_easyquote",
+          "label": "Busy, easy quote",
+          "section": "fkbpros",
+          "stage": "obj",
+          "universalOnly": true,
+          "person": "Busy working householder (job all day, kids after) with no time to spare",
+          "pain": "Just wants a price; dreads being grilled with questions on the phone",
+          "promise": "The seamless four step quote: a form, a quick text with a couple of questions and photos, a rendering and a two range initial offer, then the in person visit only if they like it"
+        },
+        {
+          "slug": "rtm_installer_burning_spend",
+          "label": "Home services owner burning ad spend",
+          "section": "rtm",
+          "stage": null,
+          "universalOnly": false,
+          "person": "Owner of a home services business (roofing, HVAC, plumbing, cleaning) running Meta ads",
+          "pain": "Pays for ads every month and gets few booked appointments: leads go cold, get shared with other companies, or never pick up",
+          "promise": "Meta ads, a landing page and an automated follow up flow that turn ad spend into booked appointments, built and run by one person"
+        },
+        {
+          "slug": "rtm_owner_boosted_posts",
+          "label": "Owner who boosted posts",
+          "section": "rtm",
+          "stage": null,
+          "universalOnly": false,
+          "person": "Small business owner who tried boosting posts",
+          "pain": "Boosted posts brought likes and nothing else: no calls, no leads, no sales",
+          "promise": "A real Meta ads funnel (ad, page, booked) that turns spend into booked calls, leads and sales"
+        },
+        {
+          "slug": "rtm_owner_agency_fed_up",
+          "label": "Fed up with the agency",
+          "section": "rtm",
+          "stage": null,
+          "universalOnly": false,
+          "person": "Business owner paying an agency that hands them to account managers",
+          "pain": "Never talks to the person running the ads, gets vague reports and nobody says straight why the numbers are not moving",
+          "promise": "One person in the ad account every day who is also the person on the sales call, with plain weekly numbers"
+        },
+        {
+          "slug": "rtm_local_service_new_to_ads",
+          "label": "Local service owner new to ads",
+          "section": "rtm",
+          "stage": null,
+          "universalOnly": false,
+          "person": "Owner of a local service business (a clinic, studio, med spa, cleaning company or practice) that runs on referrals and wants to start Meta ads",
+          "pain": "Afraid to waste money on ads they do not understand, with no idea what a lead should cost or where to start",
+          "promise": "A first Meta ads funnel in their own ad account, spend paid straight to Meta on their own card, with plain weekly numbers on what each lead costs"
+        },
+        {
+          "slug": "rtm_owner_clicks_no_leads",
+          "label": "Clicks but no leads",
+          "section": "rtm",
+          "stage": null,
+          "universalOnly": false,
+          "person": "Small business owner whose Meta ads get clicks but few form fills",
+          "pain": "The click lands on a slow page or one that says nothing about them, so the ad money buys visits and almost no leads",
+          "promise": "A landing page built to turn that click into a booked call, with proof for every claim and an offer worth taking"
+        }
+      ],
+      "briefs": {
+        "rtm": "Northstar Media: Alex Nolan's one person marketing business. He runs Meta ads, plus the landing page and the automated follow up behind them, for small business owners who need ad spend to turn into booked calls, leads and sales; home services businesses are his specialty and his proof. The copy (his website, ads, YouTube, Reels and social posts) speaks in Alex's own first person voice: plain, casual, confident and specific, honest even when it costs, never talking down to owners; no hype, no agency speak, no dashes as punctuation.",
+        "fkbpros": "SGD Pros (Summit Garden & Deck Pros) paid ads. SGD Pros connects householders with a vetted local garden and deck pro; the ads never speak as the installer or name them (connector voice). Voice: a straight talking neighbor, calm and reassuring, about the viewer's garden or deck, never about the company first; no hype, no shouting, no fake urgency; no dashes as punctuation.",
+        "fkb": "Summit Gardens and Decks (SGD) paid ads: Alex's own garden and deck renovation company, speaking as itself (not a connector for other installers). Voice: plain, calm and confident, about the viewer's own garden or deck, never about the company first; no hype, no shouting, no fake urgency; no dashes as punctuation."
+      },
+      "note": "NSM context: Meta ads for small business owners (2026-09-26 positioning). SGD Pros and SGD unchanged."
+    },
+    "seed": {
+      "rtmNotes": "Northstar Media is Alex Nolan's one person marketing brand: Meta ads, plus the landing page and the automated follow up behind them.\nAudience: small business owners who need ad spend to turn into booked calls, leads and sales. Home services businesses are the specialty and the proof.\nWorking line (the site headline): \"Meta ads that turn ad spend into booked calls.\"\nChannel lanes: the site, YouTube, Reels and social speak to small business owners in general with home services as proof; cold email speaks to home services trades only.\nWhy Alex over an agency: the person in the ad account every day is the person on the sales call. No account managers, no team relaying notes.\nAlex never handles a client's lead intake or calls: never promise call handling, call backs or appointment setting by Alex.\nThe number that matters is the conversion the business gets paid on (booked appointments for service businesses); cost per lead is reported weekly in plain English.\nVoice: first person singular (\"I build\", \"I run\"), plain, casual, confident and specific; honest even when it costs; never talks down to owners.\nHard copy rules: no dashes as punctuation and no hyphenated compound words (write \"follow up\", \"done for you\"); no AI tell phrases; no US state names or abbreviations.\nNever name a client or any of Alex's other companies; proof is anonymized (\"a garden and deck renovator\").\nNever state a price, a price range or a pricing structure. Only cost per lead, only with its date window, never cost per appointment.\nRecurring lines: \"Ad. Page. Booked.\" and \"I run this playbook on my own businesses first.\"",
+      "whosWho": "Riley is the face and voice of SGD Pros: a man in a black t-shirt (usually with green shorts), filmed talking to the camera in a modern garden with mint green cabinets and white countertops.\nThe Intro and Outro folders are his filmed lines. A description of that man in that garden is Riley.\nAlex (Alex N) is the face of Northstar Media: his own YouTube episodes, thumbnails and reels.\nMorgan (Morgan Price, Alex's partner) is a face of SGD (Summit Gardens and Decks): the Morgan Ads folders are his filmed videos; Riley appears in SGD's Riley Ads folders too.",
+      "companyNotes": "Summit Gardens and Decks (SGD) is Alex's own renovation company and speaks as itself (we, our team), plain and direct, never as a connector or directory.\nFaces: Morgan (Morgan Price, Alex's partner) in the Morgan Ads videos and Riley in the Riley Ads videos; both may speak on camera by first name.\nService area: New Jersey and Pennsylvania; the Meta ads target affluent ZIP codes in Eastby, Unity, Morrow, Summerset, Midby and Maple counties, New Jersey.\nServices: full garden and deck renovations, managed by one team from design through construction; no small repairs or partial updates.\nHow it works: a free walkthrough at the home, then a clear scope and price, then one team schedules and runs the project start to finish, so the householder never juggles multiple installers.\nNext step in the ads: a free consultation or free walkthrough, booked through summitgardens.example.\nWhat works: Morgan's own videos of real SGD projects carry the live ads, and \"Dream Gardens Start Here\" gets nearly all headline delivery; strong angles are no juggling installers, one team from design to construction, a before and after reveal of a real SGD garden, and a simple three step process.\nAudience: householders in affluent New Jersey suburbs, mostly women (about 7 in 10 leads), ages 25 and up.\nProof allowed: 8+ years of renovation experience, and before and after photos or video of SGD's own projects.\nClaims not allowed: 10+ years (use 8+), dollar prices or price ranges, financing or payment plans, a count of jobs done, reviews, ratings or testimonials presented as SGD's own (the website reviews belong to the parent company, Summit Home Buyers).",
+      "companyHint": "Summit Gardens and Decks (SGD): Alex's own company doing full garden and deck renovations, design through construction, in New Jersey (Eastby, Unity, Morrow, Summerset, Midby, Maple counties) and Pennsylvania.",
+      "brandNotes": {
+        "acme": "Sells full garden renovations, full deck renovations and whole home renovations, with one team from start to finish.\nWhere: Maple County, New Jersey (Reed Bank, Rowan, Midvale, Fenton Falls, Fairhold, Holbrook, Colt Ridge, Long Reach, Ashby Park). Ads may say New Jersey or Maple County. Anything outside Maple County is out.\nClaims allowed: free consultation, free walkthrough, free quote, honest pricing up front, no pressure, one team start to finish, garden, deck or both.\nGardens take months (cabinets about 8 to 10 weeks from order, then 12 to 15 weeks to finish). Never promise a fast garden or a timeline in days or weeks.\nClaims not allowed: any price, monthly payment or financing; licensed or insured; star ratings or review counts; a number of years in business (his founding year is unconfirmed).\nDo not add new experience or volume claims. The launch lines about a decade of work and hundreds of New Jersey gardens describe local pros in general, not his own record.\nA generated room image may only be a labeled before or design rendering, never his finished work. Never say our work, our crews or recent project.\nNever use footage or copy that says New York. This is a New Jersey client.\nVoice: connector voice. Ads run as SGD Pros, which connects the householder with a vetted local pro. Never speak as Adam or Acme Restoration, and never name them.",
+        "bluebird": "Sells garden and deck renovations, mostly in older Eastport homes and brownstones. Ads lean to gardens (about 2 to 3 gardens a month versus about 1 deck).\nAlso does brownstone molding and plaster restoration, custom carpentry and full gut renovations. Whole home work appears in two launch ads, but lead with gardens and decks.\nWhere: Eastport (Prospect Gardens, Eastport Heights, Park Hill, Bedford Row) and Southeast Kingsport (St. Albion, Laurelby, Kingsport Village, Cambry Heights, Hollow). Eastport copy and Kingsport copy are separate, each for its own ad set.\nClaims allowed: decades of carpentry and renovation experience (over twenty years), the team pulls its own permits, a one year warranty on their labor, prewar and brownstone experience.\nOffer wording allowed: free in home walkthrough, honest numbers, no pressure, no obligation.\nClaims not allowed: any price, monthly payment or financing; licensed, insured or bonded (the license on file shows inactive); a founding year.\nVisuals are her own real Eastport job photos. Never present a generated room as her finished work.\nNever name Bluebird Carpentry, Dee, Toby or the Bell family in any ad, spoken or written.\nVoice: connector voice. Ads run as SGD Pros, which matches the householder with a trusted Eastport or Kingsport team. Never speak as Bluebird Carpentry or use their name as the speaker.",
+        "cedar": "Sells garden cabinet refinishing: new doors, drawer fronts and finishes on the existing cabinet boxes, plus new countertops (quartz). No full garden renovations, no decks.\nWhere: Centerville, Kingsport, Eastport and Shoreham County. Copy says local or New York, never Lakeside or upstate.\nClaims allowed: installed in as little as 3 days (or usually about 3 days), same layout, no demolition, no weeks of mess, a fraction of the cost of new cabinets.\nClaims allowed: hundreds of gardens refinished, neat and on time crews, finishes that last, free in home quote, no obligation.\nPrice anchor: as little as $99/month, only as a from price, once per text, and never in both the headline and the primary text of one ad.\nBeat any competitor's price is allowed only on the $99/month financing angle.\nClaims not allowed: a flat only $99 a month, licensed or insured, star ratings or review counts, years in business, anything about decks or gut renovations.\nNever name Cedar Direct, CDX, Ben or Brandt, and never mix in facts from the Lakeside refinishing client.\nAds run on Instagram Reels only, so the primary text carries the message and the headline may not show.\nVoice: connector voice. Ads run as SGD Pros, which matches the householder with a trusted local refinishing team. Never speak as Cedar Direct or Ben.",
+        "delta": "Sells full garden renovations and full deck renovations. They lead with decks; master decks with custom tile and double vanities are their stated specialty.\nWhere: South Jersey, 22 ZIPs in Camber, Burlton and Glouton counties. Geo words: South Jersey and Cherry Vale area. No other town names, and never Merrin or Atlas county.\nClaims allowed: BBB accredited with an A plus rating, NARI member, renovation South Jersey homes since 2020, rated 5.0 on Google (never paired with a review or project count).\nClaims allowed from their reviews: a crew that shows up, communicates, keeps the schedule, respects the home, cleans up and sweats the details; weeks, not months; real before and after photos of their own jobs.\nClaims not allowed: any price, financing, monthly payments or payment plans (they offer none); licensed or insured; 450+ projects, 98% satisfaction or 20+ years; any warranty; one day or fixed day completion.\nNo windows, doors, basements, decks, siding, roofing or whole house work, even though they sell it. One room and one person per ad.\nNever present a mid construction photo as a finished room.\nNever name Coral, Sand, Yuri, Glen or Jared.\nVoice: connector voice. Ads run as SGD Pros, which matches the householder with a trusted South Jersey team. Never speak as Coral Renovation or use their name as the speaker.",
+        "everest": "Sells garden cabinet refinishing: the cabinet boxes stay, the doors, drawer fronts and finishes are replaced, with an optional new laminate countertop.\nCountertops are laminate only. Never say quartz or granite.\nWhere: the Lakeside area (a 52 ZIP Lakeside group across Munro, Orland and nearby counties). Geo word is Lakeside. Bufford is in their territory but not in the ads.\nClaims allowed: most gardens done in about 3 days, days not months, no demolition, same layout, boxes stay, Lakeside householders have chosen refinishing for years, trusted Lakeside crews.\nOffer wording allowed: free in person quote, no obligation.\nClaims not allowed: any price, the $99/month offer, any financing, any tax mention, licensed or insured, star ratings, years in business.\nGarden refinishing only in ads: no full garden renovations, no decks.\nNever name Cedar Direct, CDX, Eli, Elias, Hale or Finn, and never borrow facts or offers from the New York City refinishing client.\nVoice: connector voice. Ads run as SGD Pros, which connects the householder with a trusted Lakeside refinishing team. Never speak as Cedar Direct or as Eli and Finn.",
+        "fairway": "Sells full deck and full garden renovations in three tiers (Essential, Preferred, Signature), including co-op and condo work. Quotes are all in: labor, materials, project management and design.\nDoes not do cabinet refinishing. Never run a refinishing angle for this client.\nWhere: Eastport and Kingsport (Astor, East Elmfield, Forest Glen, Bayview, Fresh Fields, Riverside, Greenhaven, Park Hill, Bay Crest, Bedford Row, Prospect Rise, Clinton Rise, Fort Green). Geo word is New York; copy stays borough neutral.\nClaims allowed: licensed (the word only, never the license number), co-op and condo renovation experience, free in home consultation or free quote, clear pricing up front, one team start to finish, no pressure.\nDeck copy may name walk in showers, heated floors and finishes that last (the approved spa angle).\nClaims not allowed: any price or tier band, financing, years in business (the company formed in 2026), star ratings or review counts, MWBE, an office address, hundreds of times.\nNever name Fairway Home Pros, FWHP or Fay Gomez.\nVoice: connector voice. Ads run as SGD Pros, which connects New York householders with a trusted, licensed local team. Never speak as Fairway Home Pros or Fay.",
+        "granite": "Sells single deck renovations only, as two different products: the One Week Deck System (prefab acrylic or solid surface wall panels) and Custom Tile decks. Also tub to shower conversions.\nThe panel system is not tile. Never call it tile, tile look or grout. The about a week and matter of days claims belong to the panel system and tub to shower conversions only, never a custom tile deck.\nWhere: North Jersey, about 125 towns in Morrow, Berwyn, Passmore, Southby, Eastby, Wardell, Unity and Summerset counties. Geo word is North Jersey, never a single county.\nClaims allowed: family owned since 1983 (over four decades), most decks renovated in about a week (panel system), old tub to walk in shower in a matter of days, licensed, factory certified employees, award winning.\nClaims allowed: hundreds of reviews (4.9 stars only in written copy), walk in showers with a low threshold, built in seating and grab bars, free in home quote.\nClaims not allowed: any price (including their own $17,000 and $12,000 hooks), $1000 off, monthly payments or any financing, a lifetime or any warranty, American made products, one day completion.\nDecks only: no gardens, windows, cabinets or refinishing.\nNever name Granite Home Improvers, Granite or Gus, and never use their taglines.\nVoice: connector voice. Ads run as SGD Pros, which matches the householder with a trusted North Jersey deck team. Never speak as Granite Home Improvers.",
+        "harbor": "Sells deck renovations and deck safety work only: full renovations, tub to walk in shower conversions, shower conversions, grab bars, slip resistant floors and low threshold showers.\nWhere: Centerville (Upper East Side, Upper West Side, Morning Heights, Harlow, Hamlin Heights, Weston Heights) and the Northfield (Riverby, Kingsford, Morrow Park, Gull Island, Frogs Neck, Baychurch). Geo words: New York City, Centerville and the Northfield.\nClaims allowed: licensed and insured, in business since 2018, rated 4.9 on Google (5.0 on Yelp and Thumbtack), free consultation, no pressure.\nClaims allowed: co-op and condo board paperwork handled (alteration agreements, insurance certificates), LATICRETE waterproofing, slip resistant porcelain floors, grab bar blocking built in.\nFull renovations: most decks finished in fifteen working days, with a five year workmanship warranty. Say this about full renovations, not the small safety packages.\nClaims not allowed: any price or product or collection name, financing or monthly payments, one day or in days completion, brand names other than LATICRETE.\nSafety wording: say safer, easier, built for the years ahead. Never make aging in place a medical promise. No woman led or woman owned phrasing.\nDecks only: no gardens, refinishing or other rooms. Never name The Harbor House, HHS, 7B Decks, Hanna, Hana or Hoshi.\nVoice: connector voice. Ads run as SGD Pros, which matches New York City householders with a licensed, insured local deck team. Never speak as The Harbor House or Hana."
+      }
+    },
+    "variants": {
+      "channels": {
+        "rtm": "NSM (Northstar Media)",
+        "fkb": "SGD (Summit Gardens and Decks, speaking as itself)",
+        "client": "SGD Pros client: {name}",
+        "shared": "SGD Pros, shared (no one installer)"
+      },
+      "whoClient": "Who the installer is",
+      "whoCompany": "Who SGD is",
+      "notesHeadings": {
+        "fkb": "SGD brand notes (SGD's own rules)",
+        "rtm": "NSM notes"
+      },
+      "videoLine": "It opens a video. Your variants are new opening lines Alex can film or say (spoken and on screen), not edits of the footage.",
+      "steerHeading": "Alex's steer (a direction for the variants; it never overrides the copy rules)",
+      "rules": {
+        "fkb": [
+          "SGD speaks as itself (Summit Gardens and Decks, we, our team), never as a connector, and never names an SGD Pros client or installer.",
+          "No dashes: no em dash, no en dash, and no hyphen used as punctuation. A hyphen inside a compound word (walk-in, 10-year) is fine.",
+          "Only claims SGD's brand notes allow."
+        ],
+        "fkbpros": [
+          "Connector voice: the ad runs as SGD Pros, which connects the householder with a vetted local pro. Never speak as the installer and never use a installer's name, company, brand or people.",
+          "No dashes: no em dash, no en dash, and no hyphen used as punctuation. A hyphen inside a compound word (walk-in, 10-year) is fine.",
+          "Only claims the brand notes allow. No price, financing, licensing, warranty or rating claim the notes do not allow."
+        ],
+        "rtm": [
+          "Alex's own first person voice.",
+          "No dashes of any kind and no hyphenated words at all (write walk in, not walk-in).",
+          "No US state names. No client names or client codes."
+        ]
+      }
+    },
+    "moments": {
+      "system": "You are a short form video editor for a marketing YouTube channel. Follow the rules in the user's message exactly. Reply with one JSON object only: no prose, no code fences.",
+      "task": "Pick the best moments of a Northstar Media YouTube episode to cut as vertical Reels / Shorts (9:16, Instagram, Facebook, YouTube Shorts).",
+      "episodeAbout": "Alex films himself teaching small business marketing (Meta ads, landing pages, AI tools) over a screen recording with his webcam in a corner.",
+      "layoutLine": "`layout`: one of {layouts}. stack = the screen content (or a before and after image) on top and Alex's webcam crop below: the layout that works on this channel, use it unless another one clearly fits better. center = Alex's face only, for a talking moment. blurfill = the full 16:9 frame over a blurred copy, when the screen is the point. pip = rarely.",
+      "copyRules": [
+        "No dashes of any kind: no em dash, no en dash, no hyphen used as punctuation. The hook has no hyphen at all (write FOLLOW UP, not FOLLOW-UP); the asterisk pair is the only symbol it may carry.",
+        "{ai_tells}",
+        "The hook never names a client, a prospect, a business, a city or a US state."
+      ]
+    },
+    "adCopy": {
+      "channels": {
+        "fkb": "SGD (Summit Gardens and Decks), speaking as itself",
+        "client": "SGD Pros ad for {label}'s service area (connector voice: the ad runs as SGD Pros)"
+      },
+      "whoClient": "Who the installer is (never named in the ad)",
+      "whoCompany": "Who SGD is",
+      "notesHeadings": {
+        "fkb": "SGD brand notes (SGD's own rules)"
+      },
+      "runningHeading": "SGD copy running now (its voice; do not repeat it)",
+      "filledHeading": "Already written by Alex (keep the set coherent with these; never repeat them)",
+      "p1Line": "- The FIRST primary text you write must open with this exact line, the hook, word for word: \"{line}\". After it, the rest of FORMAT v4 below: its second line is the offer (with the place only when the hook does not already name it; never repeat the place words the hook used).",
+      "formatLines": [
+        "- Write {n} primary texts in FORMAT v4, each one the same shape:",
+        "  1. A place-first opening line: \"<the area> householders: <the offer>\" (geography from the notes leads, the offer follows), opened by one emoji (🏠 gardens, 🛁 decks, 📍 a place line).",
+        "  2. One line that names the pain as a question or a plain statement, for exactly ONE person.",
+        "  3. Two or three bullet lines, each opened by ✅ (or ⭐ for proof, 📅 for timing), one claim each, only claims the notes allow.",
+        "  4. A closing line opened by 👇 that tells them to tap to get started.",
+        "  Make the Three P's plain in every primary: the Person it is for, their Pain, and the Promise (the one outcome).",
+        "  DOUBLE SPACED: a blank line between EVERY line (write \\n\\n between lines in the JSON string)."
+      ],
+      "conceptLine": "- Suggest the ad's concept slug for its name: 2 or 3 lowercase words joined by \"_\" naming the person or situation and the hook (like coopboard_paperwork, peelingdoors_skiprenovation), and ps_obj: \"ps\" when the ad states a problem and its solution, \"obj\" when it answers a doubt that stops the click.",
+      "voice": {
+        "fkb": "SGD speaks as itself (Summit Gardens and Decks, we, our team), never as a connector, and never names an SGD Pros client or installer.",
+        "client": "Connector voice: the ad runs as SGD Pros, which matches the householder with a vetted local pro. Never speak as the installer and never use the installer's name, company, brand or people."
+      },
+      "houseRules": [
+        "No dashes of any kind: no em dash, no en dash, no hyphen used as punctuation, no line starting with a hyphen. Use commas, periods or colons. A hyphen inside a compound word (walk-in, co-op) is fine."
+      ],
+      "emojiPalette": [
+        "🏠",
+        "🛁",
+        "✅",
+        "⭐",
+        "📍",
+        "👇",
+        "📅"
+      ],
+      "landing": {
+        "client": "https://www.sgdpros.example/{code}/",
+        "company": "https://summitgardens.example/"
+      }
+    },
+    "copyRules": {
+      "dashes": {
+        "rtm": "none",
+        "fkbpros": "punctuation",
+        "fkb": "punctuation",
+        "prose": "punctuation",
+        "ads": "punctuation"
+      },
+      "stateNames": {
+        "rtm": true
+      },
+      "banClientNames": {
+        "rtm": true,
+        "fkbpros": true,
+        "fkb": true
+      },
+      "bans": {
+        "fairway": [
+          "price"
+        ],
+        "harbor": [
+          "price",
+          "financing"
+        ],
+        "delta": [
+          "financing"
+        ],
+        "fkb": [
+          "financing"
+        ]
+      },
+      "messages": {
+        "rtmName": "names a client (\"{name}\")",
+        "clientName": "names the installer (\"{name}\"): connector voice",
+        "companyName": "names an SGD Pros client (\"{name}\")",
+        "noHyphen": "hyphenated compound \"{text}\" (NSM allows none)",
+        "adClientName": "Names the installer (\"{name}\"): connector voice",
+        "adCompanyName": "Names an SGD Pros client (\"{name}\")"
+      }
+    },
+    "ads": {
+      "clientPrefix": "SGC",
+      "companyPrefix": "Mo Ad",
+      "mediaPrefix": "mo",
+      "campaignWord": "SGC",
+      "conceptExample": "coopboard_paperwork"
+    },
+    "generated": {
+      "rtm": "NSM",
+      "fkbpros": "SGD Pros",
+      "fkb": "SGD"
+    },
+    "transcripts": {
+      "properNounFixes": [
+        {
+          "from": [
+            "alix"
+          ],
+          "to": "Alex"
+        },
+        {
+          "from": [
+            "claudia"
+          ],
+          "to": "Claude"
+        },
+        {
+          "from": [
+            "hicks",
+            "field"
+          ],
+          "to": "Higgsfield"
+        },
+        {
+          "from": [
+            "higgs",
+            "field"
+          ],
+          "to": "Higgsfield"
+        },
+        {
+          "from": [
+            "referral"
+          ],
+          "to": "Refero"
+        },
+        {
+          "from": [
+            "seed",
+            "s",
+            "e",
+            "e",
+            "d"
+          ],
+          "to": "Seed"
+        },
+        {
+          "from": [
+            "steel",
+            "glue"
+          ],
+          "to": "steel blue"
+        },
+        {
+          "from": [
+            "the",
+            "sun"
+          ],
+          "to": "Sonnet"
+        },
+        {
+          "from": [
+            "sun",
+            "it"
+          ],
+          "to": "Sonnet"
+        },
+        {
+          "from": [
+            "trust",
+            "trip"
+          ],
+          "to": "trust strip"
+        },
+        {
+          "from": [
+            "brine",
+            "it",
+            "up"
+          ],
+          "to": "brighten it up"
+        }
+      ]
+    },
+    "pages": {
+      "broadGroup": "householders",
+      "proofExample": "4.9 stars from 212 householders"
+    },
+    "skills": {
+      "reelCut": "nsm-reel-cut",
+      "reelKit": "nsm-reel-kit",
+      "explainer": "nsm-explainer-reel",
+      "episodePrep": "nsm-episode-prep",
+      "adApplyClients": "sgc-sweep-apply, studio order mode",
+      "adApplyCompany": "sgd-ad-apply"
+    },
+    "episodes": {
+      "prefix": "NSM Ep",
+      "kitLabel": "NSM reel kit"
+    }
+  }
+}

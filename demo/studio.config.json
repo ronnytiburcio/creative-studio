@@ -1,0 +1,82 @@
+{
+  "app": {
+    "name": "Creative Studio (demo)"
+  },
+  "lanes": {
+    "rtm": {
+      "name": "Harbor & Pine",
+      "color": "#2F5D50",
+      "enabled": true
+    },
+    "fkbpros": {
+      "name": "Clients",
+      "color": "#E2703A"
+    },
+    "fkb": {
+      "name": "Company",
+      "color": "#7FA7C2",
+      "enabled": false
+    }
+  },
+  "clients": [
+    {
+      "code": "crumb",
+      "name": "Crumb and Crust Bakery",
+      "metaAdAccount": "act_100000000000021",
+      "hint": "Crumb and Crust Bakery: a made-up neighborhood bakery that sells sourdough, weekend boxes, cakes and baking classes.",
+      "campaigns": "all",
+      "leads": "meta"
+    },
+    {
+      "code": "ironleaf",
+      "name": "Ironleaf Fitness",
+      "metaAdAccount": "act_100000000000022",
+      "hint": "Ironleaf Fitness: a made-up small group fitness studio with coached classes and a six week program.",
+      "campaigns": "all",
+      "leads": "meta"
+    },
+    {
+      "code": "spoke",
+      "name": "Spoke and Chain Cycles",
+      "hint": "Spoke and Chain Cycles: a made-up bike shop that sells bikes and does tune ups and repairs."
+    }
+  ],
+  "roots": [
+    { "path": "Harbor and Pine", "lane": "rtm" },
+    { "path": "Clients", "lane": "fkbpros" }
+  ],
+  "tagRules": [
+    { "glob": "Crumb and Crust Bakery/**", "clients": ["crumb"] },
+    { "glob": "Ironleaf Fitness/**", "clients": ["ironleaf"] },
+    { "glob": "Spoke and Chain Cycles/**", "clients": ["spoke"] }
+  ],
+  "profile": {
+    "owner": {
+      "name": "Mira",
+      "display": "Mira (demo)"
+    },
+    "lanes": {
+      "rtm": {
+        "fullName": "Harbor & Pine",
+        "sub": "Creator studio",
+        "about": "Episodes, Shorts and statics about making good video with little gear",
+        "mark": "HP"
+      },
+      "fkbpros": {
+        "fullName": "Harbor & Pine client ads",
+        "sub": null,
+        "about": "Ads made for three made-up local businesses",
+        "mark": null
+      }
+    },
+    "seed": {
+      "rtmNotes": "Harbor & Pine is a made-up creator brand for the demo.\nAudience: people starting a small channel or a small business account with a phone and very little gear.\nVoice: first person, plain and warm, one practical tip at a time.\nNever promise growth numbers.",
+      "whosWho": "Mira: the made-up host of Harbor & Pine (the presenter stand-in in the demo videos).",
+      "brandNotes": {
+        "crumb": "Made-up neighborhood bakery.\nSells: sourdough (40 loaves on Saturdays), weekend boxes, birthday cakes, Sunday baking classes.\nVoice: warm and specific, food first.\nNever say: cheapest.",
+        "ironleaf": "Made-up small group fitness studio.\nSells: a free first class, coached small group classes, the Six Week Reset.\nVoice: encouraging, never shaming.\nClaims not allowed: weight loss numbers.",
+        "spoke": "Made-up bike shop.\nSells: bikes, spring tune ups (48 hours or free), flat fixes, kids bike fitting.\nVoice: friendly and practical."
+      }
+    }
+  }
+}

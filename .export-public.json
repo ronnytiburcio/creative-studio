@@ -1,0 +1,9 @@
+{
+  "tool": "export-public",
+  "schema": 1,
+  "exported_at": "2026-10-08T22:14:16.700Z",
+  "source_commit": "e2a454fe164fd528f8113475f9005884aa58818a",
+  "files": 438,
+  "bytes": 9042528,
+  "allow_dirty": false
+}

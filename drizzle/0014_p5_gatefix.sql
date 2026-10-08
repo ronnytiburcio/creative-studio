@@ -1,0 +1,1 @@
+ALTER TABLE `meta_campaigns` ADD `synced_through` text;

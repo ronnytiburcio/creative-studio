@@ -1,0 +1,21 @@
+ALTER TABLE `episodes` ADD `words` text;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_sha` text;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_version` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_model` text;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_at` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_ms` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_error` text;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `word_count` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `sentence_count` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `words_running_at` integer;--> statement-breakpoint
+ALTER TABLE `episodes` ADD `reel_dirs` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `output_source` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `caption_path` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `caption_preview` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `caption_checked_at` integer;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `hold_key` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `handoff_path` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `handoff_format` text;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `handoff_at` integer;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `approved_at` integer;--> statement-breakpoint
+ALTER TABLE `shorts` ADD `posted_at` integer;

@@ -1,0 +1,1 @@
+ALTER TABLE `shorts` ADD `cutting_at` integer;

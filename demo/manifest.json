@@ -1,0 +1,105 @@
+{
+  "files": [
+    {
+      "path": "Clients/Crumb and Crust Bakery/baker-talking-head.mp4",
+      "bytes": 49182,
+      "sha256": "773e09c39a1184f6eb0c9964fe7a10183be26ec65d94004c623d9024064b6cad"
+    },
+    {
+      "path": "Clients/Crumb and Crust Bakery/before-after-cake-after.jpg",
+      "bytes": 22078,
+      "sha256": "d1b11d4f9f67b08578673728e6d206a4904dd725cf804d85554a9ef328de1530"
+    },
+    {
+      "path": "Clients/Crumb and Crust Bakery/before-after-cake-before.jpg",
+      "bytes": 16960,
+      "sha256": "8849fbf265563e07442ba26dfd981f9488c851ecd1c3b3ed8927291bcdf6d11e"
+    },
+    {
+      "path": "Clients/Crumb and Crust Bakery/static-sourdough-class.jpg",
+      "bytes": 58480,
+      "sha256": "479c178767cbed379f7d70869e3d144fb74e2610261f72af9ec7034596f13166"
+    },
+    {
+      "path": "Clients/Crumb and Crust Bakery/static-weekend-box.jpg",
+      "bytes": 57214,
+      "sha256": "2155238ea11643904a16f7d9305a76448b4351c60153b86d7f3ceb82bb9790fe"
+    },
+    {
+      "path": "Clients/Ironleaf Fitness/class-broll.mp4",
+      "bytes": 23656,
+      "sha256": "e455de3a4c5c659fc4bd136d52132a0f65ff02eed0051e67441ac71c8ccbe20a"
+    },
+    {
+      "path": "Clients/Ironleaf Fitness/static-first-class-free.jpg",
+      "bytes": 44299,
+      "sha256": "438c7c8a8e210fa110da9bfb00b05e09297096388eff558d4045ca25732f4621"
+    },
+    {
+      "path": "Clients/Ironleaf Fitness/static-six-week-reset.jpg",
+      "bytes": 53844,
+      "sha256": "b038d917562e8f6f42a24a9fc82138bf734900c8bf8227985f9fe3f3549142de"
+    },
+    {
+      "path": "Clients/Spoke and Chain Cycles/before-after-bike.jpg",
+      "bytes": 39616,
+      "sha256": "7f9594672daa9e031bee25a510572daad91f92c39da3387bf5ea3a538b7d8fa6"
+    },
+    {
+      "path": "Clients/Spoke and Chain Cycles/static-spring-tune-up.jpg",
+      "bytes": 63825,
+      "sha256": "7ced6eb71a2361af239c713924436efccb2721b38a90682bfb26f54eb359cdec"
+    },
+    {
+      "path": "Harbor and Pine/B-roll/desk-setup-slider.mp4",
+      "bytes": 17681,
+      "sha256": "f7d3b7d2779b6f39606afa4655526f211631db8c1ad43c821297c9f33cd52f88"
+    },
+    {
+      "path": "Harbor and Pine/B-roll/harbor-morning-pan.mp4",
+      "bytes": 16857,
+      "sha256": "82e2d11e147ba5948f351254b51b06eef77c50acadb2e8479b19dd93e4b0d9fa"
+    },
+    {
+      "path": "Harbor and Pine/Brand/harbor-and-pine-mark.png",
+      "bytes": 13187,
+      "sha256": "a790e553a925bee0c936616bdd64bc06309f01649a9c19682c42dc5c83b52158"
+    },
+    {
+      "path": "Harbor and Pine/Brand/quote-card-light-is-free.jpg",
+      "bytes": 43889,
+      "sha256": "b31339d8d417c0954d989706afc9fa628fcdc8b0f149d96a51c829786f935a33"
+    },
+    {
+      "path": "Harbor and Pine/Episodes/Episode 1 Shooting on a Budget/Episode 1 Reel 1.mp4",
+      "bytes": 81621,
+      "sha256": "973653acc29a41f77582cf1a38dc9cb890e6d0166b9fbddcb048ab5712a1c064"
+    },
+    {
+      "path": "Harbor and Pine/Episodes/Episode 1 Shooting on a Budget/Episode 1.mp4",
+      "bytes": 243565,
+      "sha256": "9d9ef930b863d27ceaa46e5730563812ce00f1d3da20e9d83a6b2964ea25e78d"
+    },
+    {
+      "path": "Harbor and Pine/Episodes/Episode 1 Shooting on a Budget/Episode 1.srt",
+      "bytes": 2537,
+      "sha256": "23a8655204c6f8b5345657a0a8dc5b614bb92c664c539d11d726e58e6683e3eb"
+    },
+    {
+      "path": "Harbor and Pine/Shorts/window-light-in-60-seconds.mp4",
+      "bytes": 48740,
+      "sha256": "c721fe42df0e2c6e22595fce15b8cbdf6ef83dc209c63fa7ffd0e7a79aa981e0"
+    },
+    {
+      "path": "Harbor and Pine/Talking head/intro-take-3.mp4",
+      "bytes": 50910,
+      "sha256": "608bbe2af37ce4ee405276464b06a77cb4077625280a0f29591b053bf7a51bd6"
+    },
+    {
+      "path": "Harbor and Pine/Thumbnails/episode-1-thumbnail.jpg",
+      "bytes": 42754,
+      "sha256": "a0f1e719b0d78ba41c79b4a8616a88c018ef4d4646f97979ac5d50be52ed82b9"
+    }
+  ],
+  "totalBytes": 990895
+}
