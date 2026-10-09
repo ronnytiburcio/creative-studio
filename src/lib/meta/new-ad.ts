@@ -45,8 +45,14 @@ export const VIDEO_WARN_BYTES = 45 * 1024 * 1024;
 export const IMAGE_REFUSE_BYTES = 30 * 1024 * 1024;
 export const VIDEO_EXTS = ["mp4", "mov", "m4v"];
 export const IMAGE_EXTS = ["jpg", "jpeg", "png"];
-export const TESTING_CAP = 10;
-export const STATIC_CAP = 1;
+/**
+ * Lane B Testing seats (display only; Studio never enforces them): 4 seats = 3 video + 1 static, mirroring
+ * `_lib/ad_rules.py` (META_ENV_FILE's folder) TESTING_SEATS / TESTING_VIDEO_SEATS / TESTING_STATIC_SEATS. A seat is
+ * counted here as an ACTIVE synced Testing ad; the apply skill counts held seats by its own verdicts when it applies.
+ */
+export const TESTING_SEATS = 4;
+export const VIDEO_SEATS = 3;
+export const STATIC_SEATS = 1;
 
 export type AdChannel = {
   section: "fkbpros" | "fkb";
@@ -259,13 +265,18 @@ export function adContext(sql: Sql, ch: AdChannel): AdContext {
     const testing = ads.filter((a) => /testing/i.test(a.adset_name ?? ""));
     const active = testing.filter((a) => a.effective_status === "ACTIVE");
     const statics = active.filter((a) => readCreative(a.creative)?.isVideo === false);
+    const videos = active.length - statics.length;
     const sets = [...new Set(testing.map((a) => a.adset_name))];
     if (!testing.length) {
       warnings.push("No Testing ad set in the synced ads: the apply skill only builds into the client's Testing set.");
     } else {
       lines.push(
-        `Testing ad set${sets.length === 1 ? ` "${sets[0]}"` : "s"}: ${active.length} active of ${TESTING_CAP}, ${statics.length} static of ${STATIC_CAP}${asOf}. A PAUSED ad takes no slot.`,
+        `Testing ad set${sets.length === 1 ? ` "${sets[0]}"` : "s"}: ${active.length} of ${TESTING_SEATS} seats used (${videos} video of ${VIDEO_SEATS}, ${statics.length} static of ${STATIC_SEATS})${asOf}.`,
       );
+      lines.push(
+        `A staged order is PAUSED and takes no seat: it goes live only into an open seat, in an apply session (${profile().skills.adApplyClients}).`,
+      );
+      if (active.length >= TESTING_SEATS) warnings.push("No open Testing seat right now: the order waits until a seat opens.");
     }
     lines.push("Goes into the Testing ad set, never Winners.");
   } else {

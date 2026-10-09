@@ -373,13 +373,15 @@ export async function runAdsSmoke({ cfg, tmp, ok }: Ctx) {
   assert.equal(pF.nextN, 14, "SGD: one past every Mo Ad number (12 synced, 13 in the daily metrics)");
   assert.equal(pF.namePreview, "Mo Ad 14");
   // Context lines.
-  assert.match(p1.context.lines[0], /"SGC-HarborHouse-Testing": 2 active of 10, 1 static of 1/, "Testing slots from the synced ads (a PAUSED ad takes none)");
+  assert.match(p1.context.lines[0], /"SGC-HarborHouse-Testing": 2 of 4 seats used \(1 video of 3, 1 static of 1\)/, "Testing seats from the synced ads (a PAUSED ad takes none)");
+  assert.match(p1.context.lines[1], /PAUSED and takes no seat: it goes live only into an open seat, in an apply session \(sgc-sweep-apply, studio order mode\)/, "the open seat line names the profile's apply skill");
+  assert.ok(!p1.context.warnings.some((w) => /No open Testing seat/.test(w)), "2 of 4: a seat is open");
   assert.match(pF.context.lines[0], /Active ad set: "9.29.26 NEW Combo Set" \(campaign 7.6.26 K&B ABO\)/, "SGD: the one active ad set");
   s.prepare("update ads set effective_status = 'ACTIVE', adset_name = 'Other Set' where meta_ad_id = '900102'").run();
   assert.match(newAd.adContext(s, newAd.adChannel(s, "fkb")!).warnings[0], /the apply skill will stop, SGD needs exactly one active ad set/, "SGD: two active ad sets = a warning");
   s.prepare("update ads set effective_status = 'ADSET_PAUSED', adset_name = '9.10.26 Ry Set 2' where meta_ad_id = '900102'").run();
   assert.deepEqual([sha(docFile), sha(mapFile)], [docSha, mapSha], "the copy doc and the ad map are never written");
-  ok("prefill: copy doc angle blocks (FORMAT v3 primaries replace Part C, static slot, notes stripped) + the ad map's block as the fallback, hook = headline 1 up to 40 characters else primary 1's opening line, a Meta hook's angle through its ad, concept + ps|obj from the map, next number SGC (map n, synced names) / SGD (Mo Ad N), Testing slots and SGD's one active ad set; NSM and other channels' hooks refused; neither file written");
+  ok("prefill: copy doc angle blocks (FORMAT v3 primaries replace Part C, static slot, notes stripped) + the ad map's block as the fallback, hook = headline 1 up to 40 characters else primary 1's opening line, a Meta hook's angle through its ad, concept + ps|obj from the map, next number SGC (map n, synced names) / SGD (Mo Ad N), Testing seats (4 = 3 video + 1 static, the open seat line) and SGD's one active ad set; NSM and other channels' hooks refused; neither file written");
 
   // ---------------------------------------------------------------- media rules
   const ch = newAd.adChannel(s, "harbor")!;

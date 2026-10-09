@@ -114,7 +114,7 @@ The Brand lane cannot stage ads.
 - **Live checks** under every field: your profile's dash policy, the client names and "Never say" or "Claims not allowed" lines in the brand notes, the ad map's forbidden terms, AI tell phrases, no link in a primary text, emoji only from your profile's palette, duplicates, lengths. A failing line blocks Stage; warnings (a long headline, a first line past the "See more" fold) do not.
 - **Draft the rest**: the claude CLI writes only the slots that are still empty, in the same format, from the brand notes and the angle. It never overwrites what you typed. While it waits you can **Cancel**; after an error, **Retry**. The draft lands in the slots that are still empty when it finishes.
 - **Ad name**: for a client, a short **concept** (letters, digits and single underscores) and **ps** (problem / solution) or **obj** (objection); the preview shows the name the ad will get. The number is assigned when the ad is applied.
-- **Where it goes** (read only): for a client, the ad set whose name contains "Testing" (with how many of its slots are used; a PAUSED ad takes none), never "Winners"; for the Company lane, its one active ad set. Then the button (Learn More), status PAUSED, the landing page and the ad account.
+- **Where it goes** (read only): for a client, the ad set whose name contains "Testing" (how many of its 4 seats are used, 3 video and 1 static; a PAUSED ad takes none, and a staged ad goes live only into an open seat, in an apply session), never "Winners"; for the Company lane, its one active ad set. Then the button (Learn More), status PAUSED, the landing page and the ad account.
 - **Note for the apply session** (optional, up to 500 characters).
 
 ### Stage
